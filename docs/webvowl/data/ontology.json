@@ -1,0 +1,5430 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/2003/11/swrl", "http://www.example.org/meddevice-catalogue" ],
+    "title" : {
+      "en" : "European High-Risk Medical Devices and IVD Catalogue Ontology"
+    },
+    "iri" : "http://www.example.org/meddevice-catalogue",
+    "version" : "Version 1.0.0",
+    "author" : [ "David" ],
+    "description" : {
+      "en" : "Ontology for representing medical devices, IVD devices, manufacturers, risk classes, risks, incidents and field safety corrective actions based on the CSV files provided in the PEC."
+    },
+    "labels" : {
+      "en" : "European medical device catalogue ontology"
+    },
+    "comments" : {
+      "en" : "Ontology created for a university assignment on semantic web and knowledge representation."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "David",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-04-26",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "meddevice",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "en",
+        "value" : "Universitat Oberta de Catalunya",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "CSV files provided in the PEC: dispositivos, fabricantes, riesgos, incidentes and acciones correctivas.",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.example.org/meddevice-catalogue#",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "Version 1.0.0",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "David. European High-Risk Medical Devices and IVD Catalogue Ontology. Version 1.0.0, 2026.",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2026-04-26",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "European High-Risk Medical Devices and IVD Catalogue Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "owl:Class"
+  }, {
+    "id" : "169",
+    "type" : "owl:Class"
+  }, {
+    "id" : "167",
+    "type" : "owl:Class"
+  }, {
+    "id" : "162",
+    "type" : "owl:Class"
+  }, {
+    "id" : "171",
+    "type" : "owl:Class"
+  }, {
+    "id" : "178",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.example.org/meddevice-catalogue#SingleUseDevice",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SingleUseDevice",
+      "en" : "SingleUseDevice"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-005",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-005."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-005",
+        "en" : "ACUITY X4 Quadripolar LV Lead"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-006",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-006."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-006",
+        "en" : "STELLAREX Drug-Coated Balloon"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-017",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-017."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-017",
+        "en" : "cobas SARS-CoV-2 RT-PCR Test"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-003",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-003."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-003",
+        "en" : "Portico Transcatheter Heart Valve"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-025",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-025."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-025",
+        "en" : "ValveXpert Transcatheter Mitral Valve"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-004",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-004."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-004",
+        "en" : "SYNERGY Stent System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-009",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-009."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-009",
+        "en" : "Persona Knee System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-018",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-018."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-018",
+        "en" : "VIDAS HIV DUO Ultra"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-019",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-019."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-019",
+        "en" : "PROGENSA PCA3 Assay"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-020",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-020."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-020",
+        "en" : "Harmony Prenatal Test"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-012",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-012."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-012",
+        "en" : "Viva Cardiac Resynchronization Defibrillator"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-001",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-001."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "en" : "HeartMate 3 LVAD"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-023",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-023."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-023",
+        "en" : "Tivoli II Cochlear Implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-002",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-002."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-002",
+        "en" : "Micra AV Transcatheter Pacing System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-010",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-010."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-010",
+        "en" : "TRITON Total Hip System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-011",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-011."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-011",
+        "en" : "Iluvien Intravitreal Implant"
+      }
+    } ],
+    "comment" : {
+      "en" : "A device intended for single use."
+    },
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#ActionType",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActionType",
+      "en" : "ActionType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#RecallActionType",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action type value from the FSCA CSV: Recall."
+      },
+      "labels" : {
+        "IRI-based" : "RecallActionType",
+        "en" : "Recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#SafetyAlertActionType",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action type value from the FSCA CSV: SafetyAlert."
+      },
+      "labels" : {
+        "IRI-based" : "SafetyAlertActionType",
+        "en" : "SafetyAlert"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#InSituCorrectionActionType",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action type value from the FSCA CSV: InSituCorrection."
+      },
+      "labels" : {
+        "IRI-based" : "InSituCorrectionActionType",
+        "en" : "InSituCorrection"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#UserNoticeActionType",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action type value from the FSCA CSV: UserNotice."
+      },
+      "labels" : {
+        "IRI-based" : "UserNoticeActionType",
+        "en" : "UserNotice"
+      }
+    } ],
+    "comment" : {
+      "en" : "A controlled vocabulary for corrective action types."
+    },
+    "id" : "2",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#SeverityLevel",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeverityLevel",
+      "en" : "SeverityLevel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#ModerateSeverity",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Severity level value from the risks CSV: Moderate."
+      },
+      "labels" : {
+        "IRI-based" : "ModerateSeverity",
+        "en" : "Moderate"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#SeriousSeverity",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Severity level value from the risks CSV: Serious."
+      },
+      "labels" : {
+        "IRI-based" : "SeriousSeverity",
+        "en" : "Serious"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#CriticalSeverity",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Severity level value from the risks CSV: Critical."
+      },
+      "labels" : {
+        "IRI-based" : "CriticalSeverity",
+        "en" : "Critical"
+      }
+    } ],
+    "comment" : {
+      "en" : "A severity level associated with a risk."
+    },
+    "id" : "21",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#Country",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country",
+      "en" : "Country"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#Ireland",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Country value from the CSV files: Ireland."
+      },
+      "labels" : {
+        "IRI-based" : "Ireland",
+        "en" : "Ireland"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#Germany",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Country value from the CSV files: Germany."
+      },
+      "labels" : {
+        "IRI-based" : "Germany",
+        "en" : "Germany"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#Switzerland",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Country value from the CSV files: Switzerland."
+      },
+      "labels" : {
+        "IRI-based" : "Switzerland",
+        "en" : "Switzerland"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#Poland",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Country value from the CSV files: Poland."
+      },
+      "labels" : {
+        "IRI-based" : "Poland",
+        "en" : "Poland"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#Denmark",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Country value from the CSV files: Denmark."
+      },
+      "labels" : {
+        "IRI-based" : "Denmark",
+        "en" : "Denmark"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#France",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Country value from the CSV files: France."
+      },
+      "labels" : {
+        "IRI-based" : "France",
+        "en" : "France"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#UnitedKingdom",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Country value from the CSV files: United Kingdom."
+      },
+      "labels" : {
+        "IRI-based" : "UnitedKingdom",
+        "en" : "United Kingdom"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#Netherlands",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Country value from the CSV files: Netherlands."
+      },
+      "labels" : {
+        "IRI-based" : "Netherlands",
+        "en" : "Netherlands"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#Belgium",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Country value from the CSV files: Belgium."
+      },
+      "labels" : {
+        "IRI-based" : "Belgium",
+        "en" : "Belgium"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#Sweden",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Country value from the CSV files: Sweden."
+      },
+      "labels" : {
+        "IRI-based" : "Sweden",
+        "en" : "Sweden"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#Italy",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Country value from the CSV files: Italy."
+      },
+      "labels" : {
+        "IRI-based" : "Italy",
+        "en" : "Italy"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#Spain",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Country value from the CSV files: Spain."
+      },
+      "labels" : {
+        "IRI-based" : "Spain",
+        "en" : "Spain"
+      }
+    } ],
+    "comment" : {
+      "en" : "A country associated with manufacturers or incident reports."
+    },
+    "id" : "15",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#CorrectiveAction",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorrectiveAction",
+      "en" : "CorrectiveAction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-010",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-010."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-010",
+        "en" : "FSCA-010"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-011",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-011."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-011",
+        "en" : "FSCA-011"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-001",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-001."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-001",
+        "en" : "FSCA-001"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-012",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-012."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-012",
+        "en" : "FSCA-012"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-002",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-002."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-002",
+        "en" : "FSCA-002"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-013",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-013."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-013",
+        "en" : "FSCA-013"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-014",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-014."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-014",
+        "en" : "FSCA-014"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-003",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-003."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-003",
+        "en" : "FSCA-003"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-015",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-015."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-015",
+        "en" : "FSCA-015"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-004",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-004."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-004",
+        "en" : "FSCA-004"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-005",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-005."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-005",
+        "en" : "FSCA-005"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-006",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-006."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-006",
+        "en" : "FSCA-006"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-007",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-007."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-007",
+        "en" : "FSCA-007"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-008",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-008."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-008",
+        "en" : "FSCA-008"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-009",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-009."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-009",
+        "en" : "FSCA-009"
+      }
+    } ],
+    "subClasses" : [ "39", "40", "41" ],
+    "comment" : {
+      "en" : "A field safety corrective action related to an incident."
+    },
+    "id" : "1",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#ImplantableDevice",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableDevice",
+      "en" : "ImplantableDevice"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-005",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-005."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-005",
+        "en" : "ACUITY X4 Quadripolar LV Lead"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-003",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-003."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-003",
+        "en" : "Portico Transcatheter Heart Valve"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-025",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-025."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-025",
+        "en" : "ValveXpert Transcatheter Mitral Valve"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-004",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-004."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-004",
+        "en" : "SYNERGY Stent System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-009",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-009."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-009",
+        "en" : "Persona Knee System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-023",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-023."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-023",
+        "en" : "Tivoli II Cochlear Implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-012",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-012."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-012",
+        "en" : "Viva Cardiac Resynchronization Defibrillator"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-001",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-001."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "en" : "HeartMate 3 LVAD"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-002",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-002."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-002",
+        "en" : "Micra AV Transcatheter Pacing System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-010",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-010."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-010",
+        "en" : "TRITON Total Hip System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-011",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-011."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-011",
+        "en" : "Iluvien Intravitreal Implant"
+      }
+    } ],
+    "subClasses" : [ "44" ],
+    "comment" : {
+      "en" : "A device intended to be implanted in the human body."
+    },
+    "id" : "43",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#IncidentType",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IncidentType",
+      "en" : "IncidentType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#SeriousIncidentType",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident type value from the incidents CSV: SeriousIncident."
+      },
+      "labels" : {
+        "IRI-based" : "SeriousIncidentType",
+        "en" : "SeriousIncident"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#NearMissIncidentType",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident type value from the incidents CSV: NearMissIncident."
+      },
+      "labels" : {
+        "IRI-based" : "NearMissIncidentType",
+        "en" : "NearMissIncident"
+      }
+    } ],
+    "comment" : {
+      "en" : "A controlled vocabulary for incident types."
+    },
+    "id" : "49",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#SoftwareMedicalDevice",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareMedicalDevice",
+      "en" : "SoftwareMedicalDevice"
+    },
+    "comment" : {
+      "en" : "A software-based medical device."
+    },
+    "id" : "52",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#Risk",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "en" : "Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-011",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-011."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-011",
+        "en" : "Radiation overdose"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-012",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-012."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-012",
+        "en" : "Metallic artifact - MRI"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-001",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-001."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-001",
+        "en" : "Device failure - electrical"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-020",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-020."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-020",
+        "en" : "Corrosion - metallic implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-010",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-010."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-010",
+        "en" : "Software malfunction"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-015",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-015."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-015",
+        "en" : "False negative result"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-004",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-004."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-004",
+        "en" : "Hemolysis - pump-induced"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-005",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-005."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-005",
+        "en" : "Device migration - implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-016",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-016."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-016",
+        "en" : "Cross-reactivity"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-013",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-013."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-013",
+        "en" : "Electromagnetic interference"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-002",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-002."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-002",
+        "en" : "Device failure - mechanical"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-003",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-003."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-003",
+        "en" : "Thrombosis - device-related"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-014",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-014."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-014",
+        "en" : "False positive result"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-019",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-019."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-019",
+        "en" : "Wear debris - joint implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-008",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-008."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-008",
+        "en" : "Biofilm formation"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-009",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-009."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-009",
+        "en" : "Battery depletion - premature"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-017",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-017."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-017",
+        "en" : "Contamination - reagent"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-006",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-006."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-006",
+        "en" : "Lead dislodgement"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-007",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-007."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-007",
+        "en" : "Infection - device-related"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RSK-018",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk instance created from riesgos.csv with identifier RSK-018."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-018",
+        "en" : "Cybersecurity vulnerability"
+      }
+    } ],
+    "comment" : {
+      "en" : "An identified risk associated with a device or device type."
+    },
+    "id" : "4",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#CatalogueEntity",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CatalogueEntity",
+      "en" : "CatalogueEntity"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#EuropeanUnion",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "External reference entity used for linking the regulatory context."
+      },
+      "labels" : {
+        "IRI-based" : "EuropeanUnion",
+        "en" : "European Union"
+      }
+    } ],
+    "subClasses" : [ "58", "30", "49", "2", "32", "21", "15", "7", "14", "27", "1", "4", "38", "59", "10", "57", "60", "61" ],
+    "comment" : {
+      "en" : "Root class for the main entities of the catalogue."
+    },
+    "id" : "20"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#ActiveDevice",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveDevice",
+      "en" : "ActiveDevice"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-016",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-016."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-016",
+        "en" : "cobas e 801 Immunoassay Analyzer"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-005",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-005."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-005",
+        "en" : "ACUITY X4 Quadripolar LV Lead"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-014",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-014."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-014",
+        "en" : "Lumify Portable Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-015",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-015."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-015",
+        "en" : "Hemodialysis Machine 5008S"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-007",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-007."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-007",
+        "en" : "ACUSON Sequoia Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-008",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-008."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-008",
+        "en" : "MAGNETOM Vida MRI System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-001",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-001."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "en" : "HeartMate 3 LVAD"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-012",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-012."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-012",
+        "en" : "Viva Cardiac Resynchronization Defibrillator"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-023",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-023."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-023",
+        "en" : "Tivoli II Cochlear Implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-024",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-024."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-024",
+        "en" : "Infusion Pump Plum 360"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-013",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-013."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-013",
+        "en" : "ATERA Mechanical Ventilator"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-002",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-002."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-002",
+        "en" : "Micra AV Transcatheter Pacing System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-021",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-021."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-021",
+        "en" : "OPTIGA Glucose Monitoring System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-022",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-022."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-022",
+        "en" : "BeneVision N1 Patient Monitor"
+      }
+    } ],
+    "subClasses" : [ "44" ],
+    "comment" : {
+      "en" : "A device that depends on an energy source or active mechanism."
+    },
+    "id" : "64",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#RiskClass",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskClass",
+      "en" : "RiskClass"
+    },
+    "subClasses" : [ "71", "72" ],
+    "comment" : {
+      "en" : "A regulatory risk class assigned to a device."
+    },
+    "id" : "30",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#OpenCorrectiveAction",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OpenCorrectiveAction",
+      "en" : "OpenCorrectiveAction"
+    },
+    "comment" : {
+      "en" : "A corrective action whose status is open."
+    },
+    "id" : "40",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/11/swrl#Imp",
+    "baseIri" : "http://www.w3.org/2003/11/swrl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Imp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#PatientSex",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PatientSex",
+      "en" : "PatientSex"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#Female",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Patient sex value from the incidents CSV: Female."
+      },
+      "labels" : {
+        "IRI-based" : "Female",
+        "en" : "Female"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#NotAvailable",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Patient sex value from the incidents CSV: N/A."
+      },
+      "labels" : {
+        "IRI-based" : "NotAvailable",
+        "en" : "N/A"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#Male",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Patient sex value from the incidents CSV: Male."
+      },
+      "labels" : {
+        "IRI-based" : "Male",
+        "en" : "Male"
+      }
+    } ],
+    "comment" : {
+      "en" : "A controlled vocabulary for patient sex when reported."
+    },
+    "id" : "38",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "83",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#ActionStatus",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActionStatus",
+      "en" : "ActionStatus"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#ClosedStatus",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action status value from the FSCA CSV: Closed."
+      },
+      "labels" : {
+        "IRI-based" : "ClosedStatus",
+        "en" : "Closed"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#OpenStatus",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action status value from the FSCA CSV: Open."
+      },
+      "labels" : {
+        "IRI-based" : "OpenStatus",
+        "en" : "Open"
+      }
+    } ],
+    "comment" : {
+      "en" : "A controlled vocabulary for corrective action statuses."
+    },
+    "id" : "60",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#MedicalDevice",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/Medical_device",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MedicalDevice",
+      "en" : "MedicalDevice"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-005",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-005."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-005",
+        "en" : "ACUITY X4 Quadripolar LV Lead"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-006",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-006."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-006",
+        "en" : "STELLAREX Drug-Coated Balloon"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-025",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-025."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-025",
+        "en" : "ValveXpert Transcatheter Mitral Valve"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-003",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-003."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-003",
+        "en" : "Portico Transcatheter Heart Valve"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-014",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-014."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-014",
+        "en" : "Lumify Portable Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-004",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-004."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-004",
+        "en" : "SYNERGY Stent System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-015",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-015."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-015",
+        "en" : "Hemodialysis Machine 5008S"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-009",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-009."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-009",
+        "en" : "Persona Knee System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-007",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-007."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-007",
+        "en" : "ACUSON Sequoia Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-008",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-008."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-008",
+        "en" : "MAGNETOM Vida MRI System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-001",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-001."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "en" : "HeartMate 3 LVAD"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-023",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-023."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-023",
+        "en" : "Tivoli II Cochlear Implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-012",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-012."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-012",
+        "en" : "Viva Cardiac Resynchronization Defibrillator"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-024",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-024."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-024",
+        "en" : "Infusion Pump Plum 360"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-002",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-002."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-002",
+        "en" : "Micra AV Transcatheter Pacing System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-013",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-013."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-013",
+        "en" : "ATERA Mechanical Ventilator"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-010",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-010."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-010",
+        "en" : "TRITON Total Hip System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-011",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-011."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-011",
+        "en" : "Iluvien Intravitreal Implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-022",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-022."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-022",
+        "en" : "BeneVision N1 Patient Monitor"
+      }
+    } ],
+    "subClasses" : [ "64", "43", "90", "11", "52" ],
+    "comment" : {
+      "en" : "A medical device regulated under MDR."
+    },
+    "id" : "12",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#RegulatoryFramework",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegulatoryFramework",
+      "en" : "RegulatoryFramework"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#MDR",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://eur-lex.europa.eu/eli/reg/2017/745/oj",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Medical Device Regulation (EU 2017/745)."
+      },
+      "labels" : {
+        "IRI-based" : "MDR",
+        "en" : "MDR"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#IVDR",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://eur-lex.europa.eu/eli/reg/2017/746/oj",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "In Vitro Diagnostic Medical Devices Regulation (EU 2017/746)."
+      },
+      "labels" : {
+        "IRI-based" : "IVDR",
+        "en" : "IVDR"
+      }
+    } ],
+    "comment" : {
+      "en" : "A regulatory framework such as MDR or IVDR."
+    },
+    "id" : "58",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#MDRClassIIb",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MDRClassIIb",
+      "en" : "MDRClassIIb"
+    },
+    "comment" : {
+      "en" : "MDR class IIb."
+    },
+    "id" : "91",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#MDRClassIIa",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MDRClassIIa",
+      "en" : "MDRClassIIa"
+    },
+    "comment" : {
+      "en" : "MDR class IIa."
+    },
+    "id" : "93",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#ProbabilityLevel",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProbabilityLevel",
+      "en" : "ProbabilityLevel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#HighProbability",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Probability level value from the risks CSV: High."
+      },
+      "labels" : {
+        "IRI-based" : "HighProbability",
+        "en" : "High"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#LowProbability",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Probability level value from the risks CSV: Low."
+      },
+      "labels" : {
+        "IRI-based" : "LowProbability",
+        "en" : "Low"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MediumProbability",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Probability level value from the risks CSV: Medium."
+      },
+      "labels" : {
+        "IRI-based" : "MediumProbability",
+        "en" : "Medium"
+      }
+    } ],
+    "comment" : {
+      "en" : "A probability level associated with a risk."
+    },
+    "id" : "61",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#MDRClassIII",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MDRClassIII",
+      "en" : "MDRClassIII"
+    },
+    "comment" : {
+      "en" : "MDR class III."
+    },
+    "id" : "101",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/11/swrl#Variable",
+    "baseIri" : "http://www.w3.org/2003/11/swrl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Variable"
+    },
+    "attributes" : [ "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#FieldSafetyCorrectiveAction",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FieldSafetyCorrectiveAction",
+      "en" : "FieldSafetyCorrectiveAction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-010",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-010."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-010",
+        "en" : "FSCA-010"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-011",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-011."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-011",
+        "en" : "FSCA-011"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-012",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-012."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-012",
+        "en" : "FSCA-012"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-001",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-001."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-001",
+        "en" : "FSCA-001"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-002",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-002."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-002",
+        "en" : "FSCA-002"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-013",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-013."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-013",
+        "en" : "FSCA-013"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-003",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-003."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-003",
+        "en" : "FSCA-003"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-014",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-014."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-014",
+        "en" : "FSCA-014"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-004",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-004."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-004",
+        "en" : "FSCA-004"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-015",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-015."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-015",
+        "en" : "FSCA-015"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-005",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-005."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-005",
+        "en" : "FSCA-005"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-006",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-006."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-006",
+        "en" : "FSCA-006"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-007",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-007."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-007",
+        "en" : "FSCA-007"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-008",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-008."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-008",
+        "en" : "FSCA-008"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#FSCA-009",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Corrective action instance created from acciones_correctivas.csv with identifier FSCA-009."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-009",
+        "en" : "FSCA-009"
+      }
+    } ],
+    "comment" : {
+      "en" : "A field safety corrective action, also known as FSCA."
+    },
+    "id" : "41",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#SeriousIncident",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeriousIncident",
+      "en" : "SeriousIncident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-010",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-010."
+      },
+      "labels" : {
+        "IRI-based" : "INC-010",
+        "en" : "INC-010"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-020",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-020."
+      },
+      "labels" : {
+        "IRI-based" : "INC-020",
+        "en" : "INC-020"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-012",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-012."
+      },
+      "labels" : {
+        "IRI-based" : "INC-012",
+        "en" : "INC-012"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-001",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-001."
+      },
+      "labels" : {
+        "IRI-based" : "INC-001",
+        "en" : "INC-001"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-011",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-011."
+      },
+      "labels" : {
+        "IRI-based" : "INC-011",
+        "en" : "INC-011"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-014",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-014."
+      },
+      "labels" : {
+        "IRI-based" : "INC-014",
+        "en" : "INC-014"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-003",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-003."
+      },
+      "labels" : {
+        "IRI-based" : "INC-003",
+        "en" : "INC-003"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-013",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-013."
+      },
+      "labels" : {
+        "IRI-based" : "INC-013",
+        "en" : "INC-013"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-002",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-002."
+      },
+      "labels" : {
+        "IRI-based" : "INC-002",
+        "en" : "INC-002"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-016",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-016."
+      },
+      "labels" : {
+        "IRI-based" : "INC-016",
+        "en" : "INC-016"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-005",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-005."
+      },
+      "labels" : {
+        "IRI-based" : "INC-005",
+        "en" : "INC-005"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-004",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-004."
+      },
+      "labels" : {
+        "IRI-based" : "INC-004",
+        "en" : "INC-004"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-015",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-015."
+      },
+      "labels" : {
+        "IRI-based" : "INC-015",
+        "en" : "INC-015"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-007",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-007."
+      },
+      "labels" : {
+        "IRI-based" : "INC-007",
+        "en" : "INC-007"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-018",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-018."
+      },
+      "labels" : {
+        "IRI-based" : "INC-018",
+        "en" : "INC-018"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-017",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-017."
+      },
+      "labels" : {
+        "IRI-based" : "INC-017",
+        "en" : "INC-017"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-006",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-006."
+      },
+      "labels" : {
+        "IRI-based" : "INC-006",
+        "en" : "INC-006"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-009",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-009."
+      },
+      "labels" : {
+        "IRI-based" : "INC-009",
+        "en" : "INC-009"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-008",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-008."
+      },
+      "labels" : {
+        "IRI-based" : "INC-008",
+        "en" : "INC-008"
+      }
+    } ],
+    "comment" : {
+      "en" : "An incident with serious clinical or safety consequences."
+    },
+    "id" : "110",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#IncidentWithCorrectiveAction",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IncidentWithCorrectiveAction",
+      "en" : "IncidentWithCorrectiveAction"
+    },
+    "comment" : {
+      "en" : "An incident for which a corrective action has been taken."
+    },
+    "id" : "116",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#NearMissIncident",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NearMissIncident",
+      "en" : "NearMissIncident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-019",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-019."
+      },
+      "labels" : {
+        "IRI-based" : "INC-019",
+        "en" : "INC-019"
+      }
+    } ],
+    "comment" : {
+      "en" : "An incident or event that could have led to harm but did not."
+    },
+    "id" : "117",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#RiskType",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskType",
+      "en" : "RiskType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#SoftwareRisk",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk type value from the risks CSV: SoftwareRisk."
+      },
+      "labels" : {
+        "IRI-based" : "SoftwareRisk",
+        "en" : "SoftwareRisk"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#InterferenceRisk",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk type value from the risks CSV: InterferenceRisk."
+      },
+      "labels" : {
+        "IRI-based" : "InterferenceRisk",
+        "en" : "InterferenceRisk"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#InfectionRisk",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk type value from the risks CSV: InfectionRisk."
+      },
+      "labels" : {
+        "IRI-based" : "InfectionRisk",
+        "en" : "InfectionRisk"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MalfunctionRisk",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk type value from the risks CSV: MalfunctionRisk."
+      },
+      "labels" : {
+        "IRI-based" : "MalfunctionRisk",
+        "en" : "MalfunctionRisk"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MaterialRisk",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk type value from the risks CSV: MaterialRisk."
+      },
+      "labels" : {
+        "IRI-based" : "MaterialRisk",
+        "en" : "MaterialRisk"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#InjuryRisk",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk type value from the risks CSV: InjuryRisk."
+      },
+      "labels" : {
+        "IRI-based" : "InjuryRisk",
+        "en" : "InjuryRisk"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RadiationRisk",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk type value from the risks CSV: RadiationRisk."
+      },
+      "labels" : {
+        "IRI-based" : "RadiationRisk",
+        "en" : "RadiationRisk"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#ContaminationRisk",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk type value from the risks CSV: ContaminationRisk."
+      },
+      "labels" : {
+        "IRI-based" : "ContaminationRisk",
+        "en" : "ContaminationRisk"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DiagnosticRisk",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk type value from the risks CSV: DiagnosticRisk."
+      },
+      "labels" : {
+        "IRI-based" : "DiagnosticRisk",
+        "en" : "DiagnosticRisk"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#CybersecurityRisk",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk type value from the risks CSV: CybersecurityRisk."
+      },
+      "labels" : {
+        "IRI-based" : "CybersecurityRisk",
+        "en" : "CybersecurityRisk"
+      }
+    } ],
+    "comment" : {
+      "en" : "A specific type of identified risk."
+    },
+    "id" : "32",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "118",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#HighRiskDevice",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighRiskDevice",
+      "en" : "HighRiskDevice"
+    },
+    "comment" : {
+      "en" : "A device inferred or classified as high risk."
+    },
+    "id" : "119",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "120",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "113",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "122",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#ReusableDevice",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReusableDevice",
+      "en" : "ReusableDevice"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-016",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-016."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-016",
+        "en" : "cobas e 801 Immunoassay Analyzer"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-014",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-014."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-014",
+        "en" : "Lumify Portable Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-015",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-015."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-015",
+        "en" : "Hemodialysis Machine 5008S"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-007",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-007."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-007",
+        "en" : "ACUSON Sequoia Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-008",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-008."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-008",
+        "en" : "MAGNETOM Vida MRI System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-013",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-013."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-013",
+        "en" : "ATERA Mechanical Ventilator"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-024",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-024."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-024",
+        "en" : "Infusion Pump Plum 360"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-021",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-021."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-021",
+        "en" : "OPTIGA Glucose Monitoring System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-022",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-022."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-022",
+        "en" : "BeneVision N1 Patient Monitor"
+      }
+    } ],
+    "comment" : {
+      "en" : "A device that can be reused according to its intended purpose."
+    },
+    "id" : "90",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#CompetentAuthority",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CompetentAuthority",
+      "en" : "CompetentAuthority"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#MHRA",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Competent authority value from the manufacturers CSV: Medicines and Healthcare products Regulatory Agency (MHRA)."
+      },
+      "labels" : {
+        "IRI-based" : "MHRA",
+        "en" : "Medicines and Healthcare products Regulatory Agency (MHRA)"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#AFMPS",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Competent authority value from the manufacturers CSV: Agence fédérale des médicaments et des produits de santé (AFMPS)."
+      },
+      "labels" : {
+        "IRI-based" : "AFMPS",
+        "en" : "Agence fédérale des médicaments et des produits de santé (AFMPS)"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#BfArM",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Competent authority value from the manufacturers CSV: Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM)."
+      },
+      "labels" : {
+        "IRI-based" : "BfArM",
+        "en" : "Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM)"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#HPRA",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Competent authority value from the manufacturers CSV: Health Products Regulatory Authority (HPRA)."
+      },
+      "labels" : {
+        "IRI-based" : "HPRA",
+        "en" : "Health Products Regulatory Authority (HPRA)"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#RIVM",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Competent authority value from the manufacturers CSV: Rijksinstituut voor Volksgezondheid en Milieu (RIVM)."
+      },
+      "labels" : {
+        "IRI-based" : "RIVM",
+        "en" : "Rijksinstituut voor Volksgezondheid en Milieu (RIVM)"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#ANSM",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Competent authority value from the manufacturers CSV: Agence nationale de sécurité du médicament (ANSM)."
+      },
+      "labels" : {
+        "IRI-based" : "ANSM",
+        "en" : "Agence nationale de sécurité du médicament (ANSM)"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#Swissmedic",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Competent authority value from the manufacturers CSV: Swissmedic."
+      },
+      "labels" : {
+        "IRI-based" : "Swissmedic",
+        "en" : "Swissmedic"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MPA",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Competent authority value from the manufacturers CSV: Läkemedelsverket (MPA)."
+      },
+      "labels" : {
+        "IRI-based" : "MPA",
+        "en" : "Läkemedelsverket (MPA)"
+      }
+    } ],
+    "comment" : {
+      "en" : "A competent authority supervising manufacturers or regulatory activities."
+    },
+    "id" : "57",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#MDRClassI",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MDRClassI",
+      "en" : "MDRClassI"
+    },
+    "comment" : {
+      "en" : "MDR class I."
+    },
+    "id" : "141",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#Incident",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "en" : "Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-010",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-010."
+      },
+      "labels" : {
+        "IRI-based" : "INC-010",
+        "en" : "INC-010"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-020",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-020."
+      },
+      "labels" : {
+        "IRI-based" : "INC-020",
+        "en" : "INC-020"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-012",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-012."
+      },
+      "labels" : {
+        "IRI-based" : "INC-012",
+        "en" : "INC-012"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-001",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-001."
+      },
+      "labels" : {
+        "IRI-based" : "INC-001",
+        "en" : "INC-001"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-011",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-011."
+      },
+      "labels" : {
+        "IRI-based" : "INC-011",
+        "en" : "INC-011"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-014",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-014."
+      },
+      "labels" : {
+        "IRI-based" : "INC-014",
+        "en" : "INC-014"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-003",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-003."
+      },
+      "labels" : {
+        "IRI-based" : "INC-003",
+        "en" : "INC-003"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-002",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-002."
+      },
+      "labels" : {
+        "IRI-based" : "INC-002",
+        "en" : "INC-002"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-013",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-013."
+      },
+      "labels" : {
+        "IRI-based" : "INC-013",
+        "en" : "INC-013"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-016",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-016."
+      },
+      "labels" : {
+        "IRI-based" : "INC-016",
+        "en" : "INC-016"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-005",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-005."
+      },
+      "labels" : {
+        "IRI-based" : "INC-005",
+        "en" : "INC-005"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-015",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-015."
+      },
+      "labels" : {
+        "IRI-based" : "INC-015",
+        "en" : "INC-015"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-004",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-004."
+      },
+      "labels" : {
+        "IRI-based" : "INC-004",
+        "en" : "INC-004"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-018",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-018."
+      },
+      "labels" : {
+        "IRI-based" : "INC-018",
+        "en" : "INC-018"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-007",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-007."
+      },
+      "labels" : {
+        "IRI-based" : "INC-007",
+        "en" : "INC-007"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-006",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-006."
+      },
+      "labels" : {
+        "IRI-based" : "INC-006",
+        "en" : "INC-006"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-017",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-017."
+      },
+      "labels" : {
+        "IRI-based" : "INC-017",
+        "en" : "INC-017"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-009",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-009."
+      },
+      "labels" : {
+        "IRI-based" : "INC-009",
+        "en" : "INC-009"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-008",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-008."
+      },
+      "labels" : {
+        "IRI-based" : "INC-008",
+        "en" : "INC-008"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#INC-019",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Incident instance created from incidentes.csv with identifier INC-019."
+      },
+      "labels" : {
+        "IRI-based" : "INC-019",
+        "en" : "INC-019"
+      }
+    } ],
+    "subClasses" : [ "116", "117", "110" ],
+    "comment" : {
+      "en" : "A reported incident involving a device."
+    },
+    "id" : "14",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#ImplantableActiveDevice",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableActiveDevice",
+      "en" : "ImplantableActiveDevice"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-005",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-005."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-005",
+        "en" : "ACUITY X4 Quadripolar LV Lead"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-023",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-023."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-023",
+        "en" : "Tivoli II Cochlear Implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-001",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-001."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "en" : "HeartMate 3 LVAD"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-012",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-012."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-012",
+        "en" : "Viva Cardiac Resynchronization Defibrillator"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-002",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-002."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-002",
+        "en" : "Micra AV Transcatheter Pacing System"
+      }
+    } ],
+    "comment" : {
+      "en" : "A device that is both implantable and active."
+    },
+    "id" : "44",
+    "superClasses" : [ "64", "43" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#MDRRiskClass",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MDRRiskClass",
+      "en" : "MDRRiskClass"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#ClassIIb",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Regulatory risk class ClassIIb."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIIb",
+        "en" : "ClassIIb"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#ClassIIa",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Regulatory risk class ClassIIa."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIIa",
+        "en" : "ClassIIa"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#ClassI",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Regulatory risk class ClassI."
+      },
+      "labels" : {
+        "IRI-based" : "ClassI",
+        "en" : "ClassI"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#ClassIII",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Regulatory risk class ClassIII."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIII",
+        "en" : "ClassIII"
+      }
+    } ],
+    "subClasses" : [ "101", "141", "91", "93" ],
+    "comment" : {
+      "en" : "A risk class under the MDR regulation."
+    },
+    "id" : "72",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#Device",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "en" : "Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-005",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-005."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-005",
+        "en" : "ACUITY X4 Quadripolar LV Lead"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-006",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-006."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-006",
+        "en" : "STELLAREX Drug-Coated Balloon"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-025",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-025."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-025",
+        "en" : "ValveXpert Transcatheter Mitral Valve"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-003",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-003."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-003",
+        "en" : "Portico Transcatheter Heart Valve"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-004",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-004."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-004",
+        "en" : "SYNERGY Stent System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-009",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-009."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-009",
+        "en" : "Persona Knee System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-007",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-007."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-007",
+        "en" : "ACUSON Sequoia Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-008",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-008."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-008",
+        "en" : "MAGNETOM Vida MRI System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-020",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-020."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-020",
+        "en" : "Harmony Prenatal Test"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-023",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-023."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-023",
+        "en" : "Tivoli II Cochlear Implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-001",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-001."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "en" : "HeartMate 3 LVAD"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-002",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-002."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-002",
+        "en" : "Micra AV Transcatheter Pacing System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-024",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-024."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-024",
+        "en" : "Infusion Pump Plum 360"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-021",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-021."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-021",
+        "en" : "OPTIGA Glucose Monitoring System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-022",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-022."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-022",
+        "en" : "BeneVision N1 Patient Monitor"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-016",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-016."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-016",
+        "en" : "cobas e 801 Immunoassay Analyzer"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-017",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-017."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-017",
+        "en" : "cobas SARS-CoV-2 RT-PCR Test"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-014",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-014."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-014",
+        "en" : "Lumify Portable Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-015",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-015."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-015",
+        "en" : "Hemodialysis Machine 5008S"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-018",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-018."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-018",
+        "en" : "VIDAS HIV DUO Ultra"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-019",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-019."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-019",
+        "en" : "PROGENSA PCA3 Assay"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-012",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-012."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-012",
+        "en" : "Viva Cardiac Resynchronization Defibrillator"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-013",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-013."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-013",
+        "en" : "ATERA Mechanical Ventilator"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-010",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-010."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-010",
+        "en" : "TRITON Total Hip System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-011",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-011."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-011",
+        "en" : "Iluvien Intravitreal Implant"
+      }
+    } ],
+    "subClasses" : [ "12", "162", "119" ],
+    "comment" : {
+      "en" : "A medical device or in vitro diagnostic device represented in the catalogue."
+    },
+    "id" : "7",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#Manufacturer",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-004",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-004."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-004",
+        "en" : "Philips Medical Systems"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-015",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-015."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-015",
+        "en" : "bioMérieux SA"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-005",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-005."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-005",
+        "en" : "Roche Diagnostics GmbH"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-013",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-013."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-013",
+        "en" : "Nipro Corporation"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-002",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-002."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-002",
+        "en" : "Abbott Medical Devices"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-014",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-014."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-014",
+        "en" : "Hologic Inc."
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-003",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-003."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-003",
+        "en" : "Siemens Healthineers AG"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-011",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-011."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-011",
+        "en" : "LivaNova PLC"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-012",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-012."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-012",
+        "en" : "Drägerwerk AG & Co. KGaA"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-001",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-001."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-001",
+        "en" : "Medtronic plc"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-010",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-010."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-010",
+        "en" : "Zimmer Biomet Holdings"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-008",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-008."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-008",
+        "en" : "Biotronik SE & Co. KG"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-009",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-009."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-009",
+        "en" : "GE HealthCare Technologies"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-006",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-006."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-006",
+        "en" : "Boston Scientific Corporation"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#MAN-007",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Manufacturer instance created from fabricantes.csv with identifier MAN-007."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-007",
+        "en" : "Stryker Corporation"
+      }
+    } ],
+    "comment" : {
+      "en" : "A registered manufacturer of medical devices or IVD devices."
+    },
+    "id" : "27",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#ClosedCorrectiveAction",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClosedCorrectiveAction",
+      "en" : "ClosedCorrectiveAction"
+    },
+    "comment" : {
+      "en" : "A corrective action whose status is closed."
+    },
+    "id" : "39",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#IVDRClassD",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDRClassD",
+      "en" : "IVDRClassD"
+    },
+    "comment" : {
+      "en" : "IVDR class D."
+    },
+    "id" : "173",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#IVDRClassA",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDRClassA",
+      "en" : "IVDRClassA"
+    },
+    "comment" : {
+      "en" : "IVDR class A."
+    },
+    "id" : "169",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#IVDRClassC",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDRClassC",
+      "en" : "IVDRClassC"
+    },
+    "comment" : {
+      "en" : "IVDR class C."
+    },
+    "id" : "167",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#InVitroDiagnosticDevice",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/In_vitro_diagnostics",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InVitroDiagnosticDevice",
+      "en" : "InVitroDiagnosticDevice"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-016",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-016."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-016",
+        "en" : "cobas e 801 Immunoassay Analyzer"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-017",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-017."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-017",
+        "en" : "cobas SARS-CoV-2 RT-PCR Test"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-018",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-018."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-018",
+        "en" : "VIDAS HIV DUO Ultra"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-019",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-019."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-019",
+        "en" : "PROGENSA PCA3 Assay"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-020",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-020."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-020",
+        "en" : "Harmony Prenatal Test"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-021",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-021."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-021",
+        "en" : "OPTIGA Glucose Monitoring System"
+      }
+    } ],
+    "subClasses" : [ "178" ],
+    "comment" : {
+      "en" : "An in vitro diagnostic device regulated under IVDR."
+    },
+    "id" : "162",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#IVDRClassB",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDRClassB",
+      "en" : "IVDRClassB"
+    },
+    "comment" : {
+      "en" : "IVDR class B."
+    },
+    "id" : "171",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#SelfTestDevice",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SelfTestDevice",
+      "en" : "SelfTestDevice"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#DEV-021",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device instance created from dispositivos.csv with identifier DEV-021."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-021",
+        "en" : "OPTIGA Glucose Monitoring System"
+      }
+    } ],
+    "comment" : {
+      "en" : "An in vitro diagnostic device intended for self-testing."
+    },
+    "id" : "178",
+    "superClasses" : [ "162" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#RiskCategory",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskCategory",
+      "en" : "RiskCategory"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#PatientHarmCategory",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk category value from the risks CSV: Patient Harm."
+      },
+      "labels" : {
+        "IRI-based" : "PatientHarmCategory",
+        "en" : "Patient Harm"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DevicePerformanceCategory",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk category value from the risks CSV: Device Performance."
+      },
+      "labels" : {
+        "IRI-based" : "DevicePerformanceCategory",
+        "en" : "Device Performance"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DeviceFailureCategory",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk category value from the risks CSV: Device Failure."
+      },
+      "labels" : {
+        "IRI-based" : "DeviceFailureCategory",
+        "en" : "Device Failure"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DeviceSafetyCategory",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk category value from the risks CSV: Device Safety."
+      },
+      "labels" : {
+        "IRI-based" : "DeviceSafetyCategory",
+        "en" : "Device Safety"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#DiagnosticErrorCategory",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk category value from the risks CSV: Diagnostic Error."
+      },
+      "labels" : {
+        "IRI-based" : "DiagnosticErrorCategory",
+        "en" : "Diagnostic Error"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#ProductQualityCategory",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Risk category value from the risks CSV: Product Quality."
+      },
+      "labels" : {
+        "IRI-based" : "ProductQualityCategory",
+        "en" : "Product Quality"
+      }
+    } ],
+    "comment" : {
+      "en" : "A general category grouping identified risks."
+    },
+    "id" : "59",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#DeviceType",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceType",
+      "en" : "DeviceType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#ActiveDeviceType",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device type value from the CSV files: ActiveDevice."
+      },
+      "labels" : {
+        "IRI-based" : "ActiveDeviceType",
+        "en" : "ActiveDevice"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#InVitroDiagnosticDeviceType",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device type value from the CSV files: InVitroDiagnosticDevice."
+      },
+      "labels" : {
+        "IRI-based" : "InVitroDiagnosticDeviceType",
+        "en" : "InVitroDiagnosticDevice"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#ImplantableDeviceType",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device type value from the CSV files: ImplantableDevice."
+      },
+      "labels" : {
+        "IRI-based" : "ImplantableDeviceType",
+        "en" : "ImplantableDevice"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#SelfTestDeviceType",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device type value from the CSV files: SelfTestDevice."
+      },
+      "labels" : {
+        "IRI-based" : "SelfTestDeviceType",
+        "en" : "SelfTestDevice"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#ImplantableActiveDeviceType",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device type value from the CSV files: ImplantableActiveDevice."
+      },
+      "labels" : {
+        "IRI-based" : "ImplantableActiveDeviceType",
+        "en" : "ImplantableActiveDevice"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#SingleUseDeviceType",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device type value from the CSV files: SingleUseDevice."
+      },
+      "labels" : {
+        "IRI-based" : "SingleUseDeviceType",
+        "en" : "SingleUseDevice"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#ActiveImplantType",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Device type value from the CSV files: ActiveImplant."
+      },
+      "labels" : {
+        "IRI-based" : "ActiveImplantType",
+        "en" : "ActiveImplant"
+      }
+    } ],
+    "comment" : {
+      "en" : "A controlled vocabulary for device types."
+    },
+    "id" : "10",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#IVDRRiskClass",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDRRiskClass",
+      "en" : "IVDRRiskClass"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice-catalogue#ClassB",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Regulatory risk class ClassB."
+      },
+      "labels" : {
+        "IRI-based" : "ClassB",
+        "en" : "ClassB"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#ClassA",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Regulatory risk class ClassA."
+      },
+      "labels" : {
+        "IRI-based" : "ClassA",
+        "en" : "ClassA"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#ClassD",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Regulatory risk class ClassD."
+      },
+      "labels" : {
+        "IRI-based" : "ClassD",
+        "en" : "ClassD"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice-catalogue#ClassC",
+      "baseIri" : "http://www.example.org/meddevice-catalogue",
+      "comment" : {
+        "en" : "Regulatory risk class ClassC."
+      },
+      "labels" : {
+        "IRI-based" : "ClassC",
+        "en" : "ClassC"
+      }
+    } ],
+    "subClasses" : [ "173", "169", "167", "171" ],
+    "comment" : {
+      "en" : "A risk class under the IVDR regulation."
+    },
+    "id" : "71",
+    "superClasses" : [ "30" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "158",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "159",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "161",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "163",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "165",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.example.org/meddevice-catalogue#hasActionType",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasActionType",
+      "en" : "hasActionType"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates a corrective action to its action type."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#riskDescription",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "riskDescription",
+      "en" : "riskDescription"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Risk description."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#isIvd",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isIvd",
+      "en" : "isIvd"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Indicates whether the device is an IVD."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#hasDeviceType",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasDeviceType",
+      "en" : "hasDeviceType"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Relates a device to its device type."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#reportedInCountry",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "reportedInCountry",
+      "en" : "reportedInCountry"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Relates an incident to the country where it was reported."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#deviceName",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "deviceName",
+      "en" : "deviceName"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Commercial name of the device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#incidentIdentifier",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "incidentIdentifier",
+      "en" : "incidentIdentifier"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Incident identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#eudamedIncidentReference",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "eudamedIncidentReference",
+      "en" : "eudamedIncidentReference"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "EUDAMED incident reference."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#udiDi",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "udiDi",
+      "en" : "udiDi"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "UDI-DI identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#manufacturerName",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "manufacturerName",
+      "en" : "manufacturerName"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Manufacturer name."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#hasRiskClass",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasRiskClass",
+      "en" : "hasRiskClass"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Relates a device to its regulatory risk class."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#hasRiskType",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasRiskType",
+      "en" : "hasRiskType"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Relates a risk to its risk type."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#countriesAffected",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "countriesAffected",
+      "en" : "countriesAffected"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Countries or regions affected."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#correctiveActionTaken",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "correctiveActionTaken",
+      "en" : "correctiveActionTaken"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Indicates whether a corrective action was taken."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#hasPatientSex",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasPatientSex",
+      "en" : "hasPatientSex"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Relates an incident to the reported patient sex."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#reportedBy",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "reportedBy",
+      "en" : "reportedBy"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Relates an incident to the reporting manufacturer or entity."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#closureDate",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "closureDate",
+      "en" : "closureDate"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Corrective action closure date."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#imdrfCode",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "imdrfCode",
+      "en" : "imdrfCode"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "IMDRF risk code."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#correctiveActionDescription",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "correctiveActionDescription",
+      "en" : "correctiveActionDescription"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Corrective action description."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#outcomeDescription",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "outcomeDescription",
+      "en" : "outcomeDescription"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Clinical or safety outcome description."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#isLocatedInCountry",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "isLocatedInCountry",
+      "en" : "isLocatedInCountry"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Relates a manufacturer to its country."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#isSupervisedBy",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "isSupervisedBy",
+      "en" : "isSupervisedBy"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Relates a manufacturer to a competent authority."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#actionDate",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "actionDate",
+      "en" : "actionDate"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Corrective action date."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#fscaIdentifier",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "fscaIdentifier",
+      "en" : "fscaIdentifier"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "FSCA identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#actionScope",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "actionScope",
+      "en" : "actionScope"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Scope of the corrective action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#riskName",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "riskName",
+      "en" : "riskName"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Risk name."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#hasManufacturer",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "en" : "hasManufacturer"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Relates a device to its manufacturer."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#eventDate",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "eventDate",
+      "en" : "eventDate"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Incident event date."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#affectsDeviceType",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "affectsDeviceType",
+      "en" : "affectsDeviceType"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates the type of device affected by a risk."
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#hasSeverityLevel",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasSeverityLevel",
+      "en" : "hasSeverityLevel"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Relates a risk to its severity level."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#intendedPurpose",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "intendedPurpose",
+      "en" : "intendedPurpose"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Intended purpose of the device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#detectionDate",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "detectionDate",
+      "en" : "detectionDate"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Incident detection date."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#eudamedSrn",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "eudamedSrn",
+      "en" : "eudamedSrn"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "EUDAMED SRN identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#hasProbabilityLevel",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "hasProbabilityLevel",
+      "en" : "hasProbabilityLevel"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Relates a risk to its probability level."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#hasRiskCategory",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "hasRiskCategory",
+      "en" : "hasRiskCategory"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Relates a risk to its general risk category."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#hasIncidentType",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasIncidentType",
+      "en" : "hasIncidentType"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Relates an incident to its incident type."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#patientAge",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "patientAge",
+      "en" : "patientAge"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Patient age when available."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "range" : "1",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "43",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "1",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#devicesAffected",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "devicesAffected",
+      "en" : "devicesAffected"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Number or description of affected devices."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#incidentDescription",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "incidentDescription",
+      "en" : "incidentDescription"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Incident description."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "105"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "range" : "12",
+    "domain" : "90",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "1",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "12",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "12",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#isImplantable",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "isImplantable",
+      "en" : "isImplantable"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Indicates whether the device is implantable."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "112"
+  }, {
+    "range" : "12",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "14",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "64",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "14",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#deviceIdentifier",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "deviceIdentifier",
+      "en" : "deviceIdentifier"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Device identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "126"
+  }, {
+    "range" : "14",
+    "domain" : "117",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "20",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#reportDate",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "reportDate",
+      "en" : "reportDate"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Incident report date."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "129"
+  }, {
+    "range" : "20",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "20",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "20",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "20",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "20",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "20",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "20",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "20",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "20",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#isRegulatedBy",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "isRegulatedBy",
+      "en" : "isRegulatedBy"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Relates a device to the applicable regulatory framework."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "139"
+  }, {
+    "range" : "20",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#manufacturerIdentifier",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "manufacturerIdentifier",
+      "en" : "manufacturerIdentifier"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Manufacturer identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#respondsToIncident",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "respondsToIncident",
+      "en" : "respondsToIncident"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates a corrective action to the incident it responds to."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "143"
+  }, {
+    "range" : "20",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#eudamedFscaReference",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "eudamedFscaReference",
+      "en" : "eudamedFscaReference"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "EUDAMED FSCA reference."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "145"
+  }, {
+    "range" : "20",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "20",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "20",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "20",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "20",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "20",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#hasAssociatedRisk",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasAssociatedRisk",
+      "en" : "hasAssociatedRisk"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Relates an incident to its associated risk."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#riskIdentifier",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "riskIdentifier",
+      "en" : "riskIdentifier"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Risk identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "153"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "range" : "27",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "27",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "14",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "27",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "range" : "4",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "4",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#contactEmail",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "contactEmail",
+      "en" : "contactEmail"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Contact email."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "163"
+  }, {
+    "range" : "7",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "14",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "71",
+    "domain" : "167",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "71",
+    "domain" : "169",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "71",
+    "domain" : "171",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "7",
+    "domain" : "119",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "7",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#isActive",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "isActive",
+      "en" : "isActive"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Indicates whether the device is active."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "175"
+  }, {
+    "range" : "71",
+    "domain" : "173",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "162",
+    "domain" : "178",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#affectsDevice",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "affectsDevice",
+      "en" : "affectsDevice"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Relates an incident to the affected device."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "179"
+  }, {
+    "range" : "7",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "range" : "30",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "30",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#authorizationNumber",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "authorizationNumber",
+      "en" : "authorizationNumber"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Authorization number."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#hasActionStatus",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasActionStatus",
+      "en" : "hasActionStatus"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates a corrective action to its current status."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "184"
+  }, {
+    "range" : "72",
+    "domain" : "141",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://www.example.org/meddevice-catalogue#isReusable",
+    "baseIri" : "http://www.example.org/meddevice-catalogue",
+    "range" : "122",
+    "label" : {
+      "IRI-based" : "isReusable",
+      "en" : "isReusable"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Indicates whether the device is reusable."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "186"
+  }, {
+    "range" : "72",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "72",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "72",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  } ]
+}
